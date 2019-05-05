@@ -1,7 +1,7 @@
 var express = require('express');
 var router = express.Router();
 
-var asgnController = require('/asgn-contoller');
+var asgnController = require('.asgn-controller');
 
 //POST
 router.post('/asgn', asgnController.createAsgn);

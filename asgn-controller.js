@@ -1,4 +1,4 @@
-var Asgn = require('asgn-model');
+var Asgn = require('.asgn-model');
 
 exports.listAsgn = function(req, res){
     res.send('Calling ListAsgn function');

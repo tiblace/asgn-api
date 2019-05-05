@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 
 
 // Routes:
-var asgnRoute = require('asgn-router');
+var asgnRoute = require('.asgn-router');
 
 
 // DB
@@ -14,7 +14,7 @@ var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/asgn');
 
 
-app.use(asgnRoute);
+app.use('/test', asgnRoute);
 
 app.use(bodyParser.json());
 
