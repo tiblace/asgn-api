@@ -6,7 +6,7 @@ var bodyParser = require('body-parser');
 
 
 // Routes:
-var asgnRoute = require('.asgn-router');
+var asgnRoute = require('./asgn-router');
 
 
 // DB
@@ -19,6 +19,11 @@ app.use('/test', asgnRoute);
 app.use(bodyParser.json());
 
 app.use(express.static('public'));
+
+app.listen(PORT, ()=> {
+    console.log(`Server has started on port ${PORT}`);
+});
+
 
 
 

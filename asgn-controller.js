@@ -1,4 +1,4 @@
-var Asgn = require('.asgn-model');
+var Asgn = require('./asgn-model');
 
 exports.listAsgn = function(req, res){
     res.send('Calling ListAsgn function');
@@ -18,6 +18,7 @@ exports.createAsgn = function(req, res){
                 res.status(500).json(err);
             });
     }
+    
     exports.retrieveAsgn = function(req, res){
         res.send('Calling retrieveAsgn function');
     }
