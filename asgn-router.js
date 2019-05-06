@@ -9,6 +9,7 @@ router.post('/asgn', asgnController.createAsgn);
 //Get
 router.get('/asgn', asgnController.retrieveAsgn);
 
+router.get('/asgn', asgnController.listAsgn);
 
 //PUT
 router.put('/asgn', asgnController.updateAsgn);
